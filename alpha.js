@@ -1,5 +1,5 @@
 // Declaring stuff
-  myName = ""; // declaring a variable for my easter egg
+  myName = ""; // declaring a variable
   audioPlayer = document.getElementsByTagName('audio')[0];
 
   // ------ Functions ------
@@ -18,7 +18,7 @@
     oggSource.src = 'https://mahdif.github.io/alphabets-game/sounds/ogg/like-glass.ogg';
   }
 
-  // Generating a new element to restart the CSS3 animation.
+  // Generating a new element to restart the CSS3 
   function generateNewElement() {
     var elm = document.getElementById('big-char');
     var newone = elm.cloneNode(true);
@@ -103,12 +103,7 @@
       generateNewElement(); // Generate new DOM element to restart the animation
     }
 
-    // An easter egg, if you type my name
-    myName += String.fromCharCode(event.charCode);
-    console.log(myName);
-    if (myName==="mahdi") {
-      alert('You typed my name!\n--------------------------------\nNow I will show you my website.');
-      window.open('http://mahdif.com','_blank');
+    
     }
 
   }
